@@ -124,27 +124,41 @@
         .card::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
             background: linear-gradient(
-                45deg,
+                90deg,
                 transparent 0%,
-                transparent 40%,
-                rgba(255, 255, 255, 0.1) 45%,
-                rgba(255, 255, 255, 0.2) 50%,
-                rgba(255, 255, 255, 0.1) 55%,
-                transparent 60%,
+                rgba(255, 255, 255, 0.03) 25%,
+                rgba(255, 255, 255, 0.08) 50%,
+                rgba(255, 255, 255, 0.03) 75%,
                 transparent 100%
             );
-            animation: cardShimmer 3s infinite linear;
-            opacity: 0.6;
+            animation: luxuryGloss 6s ease-in-out infinite;
+            transform: skewX(-20deg);
         }
 
-        @keyframes cardShimmer {
-            0% { transform: translate(-100%, -100%) rotate(45deg); }
-            100% { transform: translate(100%, 100%) rotate(45deg); }
+        @keyframes luxuryGloss {
+            0% { 
+                left: -100%;
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            50% { 
+                left: 100%;
+                opacity: 1;
+            }
+            70% {
+                opacity: 0;
+            }
+            100% { 
+                left: 100%;
+                opacity: 0;
+            }
         }
 
         .card:hover {
@@ -154,7 +168,7 @@
         }
 
         .card:hover::before {
-            animation-duration: 1.5s;
+            animation-duration: 3s;
         }
 
         .card-title {
@@ -402,6 +416,54 @@
             </div>
         </div>
 
+        <!-- Welcome to DNA Mesh ERA Card (Featured) -->
+        <div class="card featured fade-in">
+            <h2 class="card-title">Welcome to the DNA Mesh ERA</h2>
+            <div class="card-content">
+                <p style="color: #bbb; line-height: 1.8; margin-bottom: 15px;">
+                    Where assets are alive with their own intelligence, and the GPU is liberated to do what it loves: 
+                    <strong style="color: #fff;">process vertices at full throttle</strong>.
+                </p>
+                <p style="color: #bbb; line-height: 1.8; margin-bottom: 15px;">
+                    I don't optimize VRAM — <strong style="color: #fff;">I delete it</strong>. Every computational burden 
+                    is handed to the GPU, which thrives on pure vertex throughput. Even a modest M2000M laptop can command 
+                    <strong style="color: #fff;">20 million triangles, Unity 6 URP, 1080p, 30 FPS</strong> — effortlessly.
+                </p>
+                <p style="color: #bbb; line-height: 1.8; margin-bottom: 15px;">
+                    But this protocol isn't just raw power. It's <strong style="color: #fff;">surgical control</strong> over your project.
+                </p>
+                <p style="color: #bbb; line-height: 1.8; margin-bottom: 15px;">
+                    This new era covers every environmental need, from <strong style="color: #fff;">Photorealistic landscapes</strong> 
+                    to <strong style="color: #fff;">Stylized and Toon worlds</strong>. Whether it's complex trees, lush vegetation, 
+                    delicate flowers, wild grass, mushrooms, or ancient rocks, the DNA-Mesh protocol masters the full spectrum of diversity.
+                </p>
+                <p style="color: #888; line-height: 1.7; margin-bottom: 15px; font-style: italic;">
+                    No sprawling textures.<br>
+                    No hundreds of materials.<br>
+                    Just meshes, one material, one shader — and infinite creative freedom.
+                </p>
+                <p style="color: #bbb; line-height: 1.8; margin-bottom: 15px;">
+                    Poly count becomes the <strong style="color: #fff;">brush, not the chain</strong>. The GPU handles it with 
+                    sublime efficiency, allowing visual authority to scale across any art style—beyond realism, beyond compromise.
+                </p>
+                <p style="color: #aaa; line-height: 1.7; margin-bottom: 15px;">
+                    <strong style="color: #fff;">This is the DNA Mesh philosophy:</strong>
+                </p>
+                <p style="color: #888; font-size: 0.95rem; line-height: 1.7;">
+                    ⚡ Maximum visual fidelity through intelligent geometry.<br>
+                    ⚡ GPU-aligned performance without VRAM dependency.<br>
+                    ⚡ Pipeline simplicity that turns project management into a precision instrument.
+                </p>
+                <p style="color: #bbb; line-height: 1.8; margin-top: 15px;">
+                    DNA is more than data — it's <strong style="color: #fff;">control, elegance, and ruthless efficiency</strong>. 
+                    It balances pure visual power, performance magic, and absolute management clarity.
+                </p>
+                <p style="color: #fff; font-weight: 600; margin-top: 15px; font-size: 1.1rem;">
+                    Compromise? Obsolete.
+                </p>
+            </div>
+        </div>
+
         <!-- Expertise Card -->
         <div class="card fade-in">
             <h2 class="card-title">Expertise</h2>
@@ -417,13 +479,71 @@
             </div>
         </div>
 
+        <!-- DNA-Mesh Technology Card (New) -->
+        <div class="card fade-in">
+            <h2 class="card-title">DNA-Mesh Technology</h2>
+            <div class="card-content">
+                <p style="color: #bbb; line-height: 1.8; margin-bottom: 12px;">
+                    Our proprietary <strong style="color: #fff;">DNA-encoding system</strong> embeds visual and 
+                    behavioral data directly into mesh vertices—replacing external textures entirely.
+                </p>
+                <p style="color: #888; font-size: 0.95rem; line-height: 1.7;">
+                    <strong style="color: #aaa;">The Result:</strong><br>
+                    • Single universal shader governs all assets<br>
+                    • Zero texture memory at runtime<br>
+                    • Infinite variations from one material<br>
+                    • Proven: 19.4M triangles @ 30 FPS
+                </p>
+            </div>
+        </div>
+
+        <!-- Core Technical Achievements Card (New) -->
+        <div class="card fade-in">
+            <h2 class="card-title">Core Achievements</h2>
+            <div class="card-content">
+                <p style="color: #888; font-size: 0.95rem; line-height: 1.7;">
+                    <strong style="color: #aaa;">DNA-Mesh Protocol:</strong><br>
+                    Engineered a unified GPU shader system that decodes complex data at runtime—achieving 
+                    "One Shader, Zero Textures" workflow for maximum memory efficiency.
+                </p>
+                <p style="color: #888; font-size: 0.95rem; line-height: 1.7; margin-top: 12px;">
+                    <strong style="color: #aaa;">Memory Optimization:</strong><br>
+                    Optimized rendering pipelines to minimize GPU memory footprint and draw call overhead, 
+                    allowing high-fidelity environments to maintain peak performance on any hardware.
+                </p>
+                <p style="color: #888; font-size: 0.95rem; line-height: 1.7; margin-top: 12px;">
+                    <strong style="color: #aaa;">Procedural Systems:</strong><br>
+                    Developed advanced wind deformation, subsurface scattering, and procedural variation 
+                    systems that are fully integrated into the mesh data.
+                </p>
+            </div>
+        </div>
+
+        <!-- Performance Proven Card (New) -->
+        <div class="card fade-in">
+            <h2 class="card-title">Performance Proven</h2>
+            <div class="card-content">
+                <p style="color: #bbb; line-height: 1.8; margin-bottom: 12px;">
+                    Production-validated rendering system achieving photorealistic quality 
+                    with <strong style="color: #fff;">zero VRAM overhead</strong>.
+                </p>
+                <p style="color: #888; font-size: 0.95rem; line-height: 1.7;">
+                    <strong style="color: #aaa;">Benchmark:</strong><br>
+                    • 19.4M triangles @ 30 FPS<br>
+                    • Mid-range mobile GPU<br>
+                    • 1000+ unique assets<br>
+                    • Single material system
+                </p>
+            </div>
+        </div>
+
         <!-- Philosophy Card -->
         <div class="card fade-in">
             <h2 class="card-title">Philosophy</h2>
             <div class="card-content">
                 <p style="color: #bbb; line-height: 1.8;">
                     We believe in <strong style="color: #fff;">self-contained assets</strong> that carry their own DNA. 
-                    By baking intelligence into mesh data, we create portable, efficient, and future-proof content 
+                    By embedding intelligence into mesh data, we create portable, efficient, and future-proof content 
                     that scales from mobile to high-end platforms. <strong style="color: #fff;">Zero dependencies. Maximum performance.</strong>
                 </p>
             </div>
@@ -459,6 +579,52 @@
             </div>
         </div>
 
+        <!-- What We Deliver Card (New) -->
+        <div class="card featured fade-in">
+            <h2 class="card-title">What We Deliver</h2>
+            <div class="card-content">
+                <ul>
+                    <li>Custom DNA-driven shader systems for game engines</li>
+                    <li>Universal material frameworks for entire projects</li>
+                    <li>Vertex-encoded dynamics (wind, motion, deformation)</li>
+                    <li>Zero-VRAM asset pipelines optimized for all platforms</li>
+                    <li>Production-ready environment assets (forests, vegetation, architecture)</li>
+                    <li>Technical documentation and integration support</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Applications Card (New) -->
+        <div class="card fade-in">
+            <h2 class="card-title">Applications</h2>
+            <div class="card-content">
+                <p style="color: #bbb; line-height: 1.8; margin-bottom: 12px;">
+                    DNA-mesh systems excel in performance-critical productions:
+                </p>
+                <p style="color: #888; font-size: 0.95rem; line-height: 1.7;">
+                    • <strong style="color: #aaa;">Open-World Games:</strong> Massive environmental diversity with single material<br>
+                    • <strong style="color: #aaa;">Mobile Productions:</strong> AAA quality without VRAM constraints<br>
+                    • <strong style="color: #aaa;">Procedural Generation:</strong> DNA templates create infinite variations<br>
+                    • <strong style="color: #aaa;">Asset Packages:</strong> Self-contained, portable, zero dependencies
+                </p>
+            </div>
+        </div>
+
+        <!-- Specializations Card (New) -->
+        <div class="card fade-in">
+            <h2 class="card-title">Specializations</h2>
+            <div class="card-content">
+                <ul>
+                    <li>DNA-Driven Shader Architecture</li>
+                    <li>Universal Material Systems</li>
+                    <li>Zero-VRAM Rendering Pipelines</li>
+                    <li>Vertex Intelligence Encoding</li>
+                    <li>Cross-Platform Optimization</li>
+                    <li>Large-Scale Environment Assets</li>
+                </ul>
+            </div>
+        </div>
+
         <!-- Contact & Portfolio Card -->
         <div class="card featured fade-in">
             <h2 class="card-title">Connect & Explore</h2>
@@ -468,10 +634,10 @@
                 </p>
                 <div class="links-grid">
                     <a href="mailto:blvckluster@gmail.com" class="link-btn">📧 Email</a>
+                    <a href="https://www.linkedin.com/in/1blvckluster" target="_blank" class="link-btn">💼 LinkedIn</a>
                     <a href="https://x.com/blvckluster" target="_blank" class="link-btn">𝕏 Twitter/X</a>
                     <a href="https://www.youtube.com/@blvckluster" target="_blank" class="link-btn">📺 YouTube</a>
                     <a href="https://github.com/blvckluster" target="_blank" class="link-btn">💻 GitHub</a>
-                    <a href="https://wa.me/201090163435" target="_blank" class="link-btn">💬 WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -502,7 +668,7 @@
         document.querySelectorAll('.card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
-            card.style.transition = 'opacity 0.4s ease, transform 0.6s ease';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
         });
     </script>
